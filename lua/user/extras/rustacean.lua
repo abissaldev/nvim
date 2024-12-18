@@ -19,6 +19,10 @@ function M.config()
 
       settings = {
         ["rust-analyzer"] = {
+             checkOnSave = {
+                command = "clippy",  -- Desative ou ajuste este comando conforme necessário
+                enable = false       -- Esta linha desativa o checkOnSave
+            },
           inlayHints = {
             chainingHints = {
               bindingModeHints = {
